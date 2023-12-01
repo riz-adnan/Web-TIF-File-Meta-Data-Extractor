@@ -1,0 +1,26 @@
+.title{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    color: rgb(6, 57, 40);
+    
+}
+.promp{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    color: rgb(6, 57, 40);
+}
+.input{
+    display: grid;
+    margin-top: 20px;
+    justify-content: center;
+    color: rgb(6, 57, 40);
+
+}
+body{
+background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 10px 10px;
+}
