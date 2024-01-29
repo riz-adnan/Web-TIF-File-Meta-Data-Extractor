@@ -26,13 +26,17 @@ def upload_file():
     if file:
         # Read the PDF file content into memory
         tiff_image=Image.open(file)
-        print(tiff_image)
+        meta=tiff_image.tag_v2
+        print("meta",meta)
+        info=tiff_image.info
+        print("info",info)
+        
         tiff_image.save("./static/output.pdf", "PDF", resolution=100.0, save_all=True)
         
         
         
         # Use the content to display the PDF directly without saving it
-        return render_template("display.html")
+        return render_template("display.html",info=info,meta=meta)
 
     return "Invalid file type"
     
